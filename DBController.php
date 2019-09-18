@@ -4,7 +4,7 @@ class DBController {
 	private $host = "localhost";
 	private $user = "id9141785_coco";
 	private $password = "coco030345";
-	private $database = "id9141785_bdhost";
+	private $database = "id9141785_ellagarto";
 	private $conn;
 	
     function __construct() {

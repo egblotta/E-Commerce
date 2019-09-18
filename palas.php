@@ -29,6 +29,8 @@ require_once "ValidacionSesion.php";
     <!-- Toast Messages -->
     <link href="css/toast.min.css" rel="stylesheet">
 
+    <link href="css/toast.min.css" rel="stylesheet">
+
     <style>
         .map-container{
             overflow:hidden;
@@ -131,39 +133,40 @@ require_once "ValidacionSesion.php";
 
             <h1 class="my-4">Categorias</h1>
             <div class="list-group">
-                <div class="list-group">
-                    <a href="aerosoles.php" class="list-group-item">Aerosoles</a>
-                    <a href="alfombras.php" class="list-group-item">Alfombras</a>
-                    <a href="cepillos.php" class="list-group-item">Cepillos</a>
-                    <a href="escobillones.php" class="list-group-item">Escobillones</a>
-                    <a href="esponjas.php" class="list-group-item">Esponjas</a>
-                    <a href="mopas.php" class="list-group-item">Mopas</a>
-                    <a href="paños.php" class="list-group-item">Paños</a>
-                    <a href="palas.php" class="list-group-item">Palas de residuos</a>
-                    <a href="secadores.php" class="list-group-item">Secadores de piso</a>
-                    <a href="trapos.php" class="list-group-item">Trapos de piso</a>
-                    <a href="rejillas.php" class="list-group-item">Rejillas</a>
-                    <a href="varios.php" class="list-group-item">Varios</a>
+                <a href="aerosoles.php" class="list-group-item">Aerosoles</a>
+                <a href="alfombras.php" class="list-group-item">Alfombras</a>
+                <a href="cepillos.php" class="list-group-item">Cepillos</a>
+                <a href="escobillones.php" class="list-group-item">Escobillones</a>
+                <a href="esponjas.php" class="list-group-item">Esponjas</a>
+                <a href="mopas.php" class="list-group-item">Mopas</a>
+                <a href="paños.php" class="list-group-item">Paños</a>
+                <a href="palas.php" class="list-group-item">Palas de residuos</a>
+                <a href="secadores.php" class="list-group-item">Secadores de piso</a>
+                <a href="trapos.php" class="list-group-item">Trapos de piso</a>
+                <a href="rejillas.php" class="list-group-item">Rejillas</a>
+                <a href="varios.php" class="list-group-item">Varios</a>
 
-                </div>
             </div>
+
         </div>
+
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-9">
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Secadores de piso</h3>
-            <br>
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Palas de residuos</h3>
+            <br>
             <div class="row">
 
-                <?php include 'secadores-images.php';?>              <!-- Php para cargar los productos en el main -->
+                <?php include 'palas-images.php';?>              <!-- Php para cargar las imagenes en el main -->
 
             </div>
+            <!-- /.row -->
 
             <br>
 
@@ -261,16 +264,18 @@ require_once "ValidacionSesion.php";
                 </div>
             </div>
             <!-- Modal: modalCart -->
+
         </div>
         <!-- /.col-lg-9 -->
+
     </div>
     <!-- /.row -->
+
 </div>
 <!-- /.container -->
 
-
 <!-- Footer -->
-<footer class="py-3 bg-dark">
+<footer class="py-3 bg-dark fixed-bottom">
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; El Lagarto 2019</p>
     </div>
@@ -283,7 +288,6 @@ require_once "ValidacionSesion.php";
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/modal-cart.js"></script>
 <script src="js/cart-add.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 
 </body>

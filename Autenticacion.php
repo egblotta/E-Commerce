@@ -3,7 +3,7 @@ require "DBController.php";
 
 
 class Auth {
-                //busca el user ingresado en la bd
+                //busca el usuario ingresado en la bd
     function getMemberByUsername($username) {
         $db_handle = new DBController();
             $query = "Select * from usuarios where usuario_nombre = ?";

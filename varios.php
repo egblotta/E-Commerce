@@ -144,7 +144,6 @@ require_once "ValidacionSesion.php";
                     <a href="trapos.php" class="list-group-item">Trapos de piso</a>
                     <a href="rejillas.php" class="list-group-item">Rejillas</a>
                     <a href="varios.php" class="list-group-item">Varios</a>
-
                 </div>
             </div>
         </div>
@@ -156,12 +155,12 @@ require_once "ValidacionSesion.php";
             <br>
             <br>
             <br>
-            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Secadores de piso</h3>
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Cepillos</h3>
             <br>
 
             <div class="row">
 
-                <?php include 'secadores-images.php';?>              <!-- Php para cargar los productos en el main -->
+                <?php include 'varios-images.php';?>              <!-- Php para cargar los productos en el main -->
 
             </div>
 

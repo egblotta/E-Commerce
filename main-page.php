@@ -75,15 +75,17 @@ require_once "ValidacionSesion.php";
                     <?php
                 }
                 ?>
+                <!--
                 <li class="nav-item">
                     <a class="nav-link" href="#map-container-google-1">Ubicacion</a>
-                </li>
+                </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="#nosotros">Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link" data-toggle="modal" data-target="#modalContactForm">Contacto</a>
                 </li>
+
                 <?php
                 if($isLoggedIn){    //unicamente los usuarios logeados pueden ver esto
                     ?>
@@ -136,13 +138,18 @@ require_once "ValidacionSesion.php";
             <div class="list-group">
                 <a href="aerosoles.php" class="list-group-item">Aerosoles</a>
                 <a href="alfombras.php" class="list-group-item">Alfombras</a>
+                <a href="bolsas.php" class="list-group-item">Bolsas</a>
                 <a href="cepillos.php" class="list-group-item">Cepillos</a>
                 <a href="escobillones.php" class="list-group-item">Escobillones</a>
+                <a href="esponjas.php" class="list-group-item">Esponjas</a>
                 <a href="mopas.php" class="list-group-item">Mopas</a>
                 <a href="paños.php" class="list-group-item">Paños</a>
+                <a href="palas.php" class="list-group-item">Palas de residuos</a>
+                <a href="plasticos.php" class="list-group-item">Plasticos</a>
                 <a href="secadores.php" class="list-group-item">Secadores de piso</a>
                 <a href="trapos.php" class="list-group-item">Trapos de piso</a>
                 <a href="rejillas.php" class="list-group-item">Rejillas</a>
+                <a href="varios.php" class="list-group-item">Varios</a>
             </div>
 
         </div>
@@ -192,26 +199,34 @@ require_once "ValidacionSesion.php";
             <h3 id="nosotros" class="card-header text-center font-weight-bold text-uppercase py-4">Quienes somos</h3>
             <div class="card example-1 scrollbar-ripe-malinka">
                 <div class="card-body">
-                    <p>Somos una pequeña empresa dedicada a la venta y distribucion de articulos de limpieza en general. Trabajamos en Cuyo,
-                    ofreciendo nuestros productos en gran parte de Mendoza, San Luis y San Juan.
-                    Nuestras oficinas se encuentran ubicadas en 9 de Julio 1102 de ciudad de Mendoza.</p>
+                    <p>Somos una pequeña empresa dedicada a la venta y distribucion de articulos de limpieza en general. Trabajamos en Mendoza,
+                    ofreciendo nuestros productos en gran parte de la provincia.
+                    </p>
                 </div>
             </div>
 
-            <br>
-            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Donde estamos ubicados</h3>
-            <!--Google map-->
+            <!--<br>
+          <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Donde estamos ubicados</h3>
+
             <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3350.2990543165847!2d-68.8429822!3d-
                 32.8902606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091a280b1023%3A0xbb274fe164cc7ba8!2s9+De+Julio+1102!
                 5e0!3m2!1ses-419!2sar!4v1561075825035!5m2!1ses-419!2sar" width="600" height="450" frameborder="0"
                         style="border:0" allowfullscreen></iframe>
             </div>
-
-            <br>
-
+            -->
             <!--Google Maps-->
 
+            <br>
+            <h3 id="lista" class="card-header text-center font-weight-bold text-uppercase py-4">Lista de articulos</h3>
+            <div class="card example-1 scrollbar-ripe-malinka">
+                <div class="card-body text-center h3-responsive">
+                    <p>¡Solicitá nuestra lista de precios via E-mail!</p>
+                    <a href="" class="btn btn-md btn-success" data-toggle="modal" data-target="#modalContactForm">Pedila acá!</a>
+                </div>
+            </div>
+
+            <br>
             <!--Contact-->
 
             <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -230,25 +245,25 @@ require_once "ValidacionSesion.php";
                         <div class="modal-body mx-3">
                             <div class="md-form mb-5">
                                 <i class="fas fa-user prefix grey-text"></i>
-                                <input type="text" name="nombre" id="nombre" class="form-control validate">
+                                <input type="text" name="nombre" id="nombre" class="form-control validate" required>
                                 <label data-error="wrong" data-success="right" for="form34">Tu nombre</label>
                             </div>
 
                             <div class="md-form mb-5">
                                 <i class="fas fa-envelope prefix grey-text"></i>
-                                <input type="email" name="email" id="email" class="form-control validate">
+                                <input type="email" name="email" id="email" class="form-control validate" required>
                                 <label data-error="wrong" data-success="right" for="form29">Tu email</label>
                             </div>
 
                             <div class="md-form mb-5">
                                 <i class="fas fa-tag prefix grey-text"></i>
-                                <input type="text" name="razon" id="razon" class="form-control validate">
+                                <input type="text" name="razon" id="razon" class="form-control validate" required>
                                 <label data-error="wrong" data-success="right" for="form32">Razon</label>
                             </div>
 
                             <div class="md-form">
                                 <i class="fas fa-pencil prefix grey-text"></i>
-                                <textarea type="text" name="mensaje" id="mensaje" class="md-textarea form-control" rows="4"></textarea>
+                                <textarea type="text" name="mensaje" id="mensaje" class="md-textarea form-control" maxlength="140" rows="4" required></textarea>
                                 <label data-error="wrong" data-success="right" for="form8">Mensaje</label>
                             </div>
 

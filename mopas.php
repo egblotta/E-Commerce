@@ -136,11 +136,15 @@ require_once "ValidacionSesion.php";
                     <a href="alfombras.php" class="list-group-item">Alfombras</a>
                     <a href="cepillos.php" class="list-group-item">Cepillos</a>
                     <a href="escobillones.php" class="list-group-item">Escobillones</a>
+                    <a href="esponjas.php" class="list-group-item">Esponjas</a>
                     <a href="mopas.php" class="list-group-item">Mopas</a>
                     <a href="paños.php" class="list-group-item">Paños</a>
+                    <a href="palas.php" class="list-group-item">Palas de residuos</a>
                     <a href="secadores.php" class="list-group-item">Secadores de piso</a>
                     <a href="trapos.php" class="list-group-item">Trapos de piso</a>
                     <a href="rejillas.php" class="list-group-item">Rejillas</a>
+                    <a href="varios.php" class="list-group-item">Varios</a>
+
                 </div>
             </div>
         </div>

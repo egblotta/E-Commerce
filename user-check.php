@@ -2,15 +2,14 @@
 require "DBController.php";
 $db_handle= new DBController();
 
-$user = mysqli_real_escape_string($db_handle->connectDB(), $_POST['b']);
+$user = mysqli_real_escape_string($db_handle->connectDB(), $_POST['uname']);
 
-$query=("SELECT * FROM usuarios WHERE usuario_nombre = '$user'");
-$resultado = mysqli_query($db_handle->connectDB(), $query) or die (mysqli_error());
+$query=("SELECT count(*) AS cntUser FROM usuarios WHERE usuario_nombre = '$user'");
 
-$row=mysqli_num_rows($resultado);
+$resultado = mysqli_query($db_handle->connectDB(), $query);
 
-if($row == 0){
-    echo "<span style='font-weight:bold;color:green;'>Disponible.</span>";
-}else{
-    echo "<span style='font-weight:bold;color:red;'>El nombre de usuario ya existe.</span>";
-}
+$row=mysqli_fetch_array($resultado);
+
+$count= $row['cntUser'];
+
+echo $count;

@@ -16,7 +16,16 @@ if($cart!=0) {
     $salida .= "<h4 class=\"d-flex justify-content-between align-items-center mb-3\">
                 <span class=\"text-muted\">Tu carrito</span>
                 <span class=\"badge badge-secondary badge-pill\">".$cart."</span>
-            </h4>";
+            </h4>
+            <table class=\"table table-hover\">
+                                <thead>
+                                <tr>
+                                    <th  class='font-weight-bold'>Codigo</th>
+                                    <th  class='font-weight-bold'>Producto</th>
+                                    <th  class='font-weight-bold'>Precio</th>
+                                </tr>
+                                </thead>
+                                </table>";
              foreach ($aCarrito as $key => $value) {
                  $salida .= "<ul class=\"list-group mb-3\">
                 <li class=\"list-group-item d-flex justify-content-between text-center\">

@@ -125,7 +125,7 @@ if(!$isLoggedIn) {
                 </div>
 
                 <div class="mb-3">
-                    <label for="address">Direccion</label>
+                    <label for="address">Direccion 1</label>
                     <input type="text" name="direccion" class="form-control" id="direccion" placeholder="" required>
                 </div>
 
@@ -133,28 +133,15 @@ if(!$isLoggedIn) {
                     <label for="address2">Direccion 2</label>
                     <input type="text" name="direccion2" class="form-control" id="direccion2" placeholder="">
                 </div>
-
-                <div class="row">
-                    <div class="col-md-5 mb-3">
-                        <label for="country">Pais</label>
-                        <select name="pais" class="custom-select d-block w-100" id="country" required>
-                            <option>Argentina</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="state">Provincia</label>
-                        <select name="provincia" class="custom-select d-block w-100" id="state" required>
-                            <option>Mendoza</option>
-                            <option>San Juan</option>
-                            <option>San Luis</option>
-                        </select>
-                    </div>
+                <div class="mb-3">
+                    <label for="address2">Localidad</label>
+                    <input type="text" name="localidad" class="form-control" id="localidad" placeholder="">
                 </div>
 
                 <hr class="mb-4">
 
                 <hr class="mb-4">
-                <button id="1" class="btn btn-primary btn-lg btn-block" type="submit" onclick="enviar()">Checkout</button>
+                <button id="1" class="btn btn-primary btn-lg btn-block" type="submit" onclick="enviar()">Enviar pedido</button>
                 <br>
             </form>
         </div>

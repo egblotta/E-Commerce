@@ -39,6 +39,7 @@ if(!$isLoggedIn) {
     <!-- Custom styles for this template -->
     <link href="css/shop-homepage.css" rel="stylesheet">
 
+
     <style>
         .pt-3-half {
             padding-top: 1.4rem;
@@ -142,29 +143,25 @@ if(!$isLoggedIn) {
             <div class="modal-body mx-3">
                 <div class="md-form mb-5">
                     <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="orangeForm-name" class="form-control validate" name="usuario_nombre" placeholder="Usuario" required>
-                    <label data-error="wrong" data-success="right" for="orangeForm-name"></label>
+                    <input id="usuario_nombre" name="usuario_nombre" class="form-control" pattern="[A-Za-z]{4,}" title="Debe tener 4 letras o mas" placeholder="Usuario" type="text" required="">
+                    <div id="uname_response" class="response"></div>
                 </div>
                 <div class="md-form mb-5">
                     <i class="fas fa-envelope prefix grey-text"></i>
                     <input type="email" id="orangeForm-email" class="form-control validate" name="usuario_email" placeholder="Correo" required>
-                    <label data-error="wrong" data-success="right" for="orangeForm-email"></label>
                 </div>
                 <div class="md-form mb-5">
                     <i class="fas fa-user prefix grey-text"></i>
                     <input type="text" id="orangeForm-name" class="form-control validate" name="nombre" placeholder="Nombre" required>
-                    <label data-error="wrong" data-success="right" for="orangeForm-name"></label>
                 </div>
                 <div class="md-form mb-4">
                     <i class="fas fa-lock prefix grey-text"></i>
                     <input name="usuario_password" id="usuario_password" class="form-control validate" onkeyup='check();' type="password"
                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Debe tener al menos una mayuscula, un numero y 6 o mas caracteres" placeholder="Contraseña" required="">
-                    <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
                 </div>
                 <div class="md-form mb-4">
                     <i class="fas fa-lock prefix grey-text"></i>
                     <input name="usuario_password2" id="usuario_password2" class="form-control validate" onkeyup='check();' type="password" placeholder="Repetir contraseña" required="">
-                    <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
                 </div>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" id="mostrar_contrasena" class="custom-control-input">
@@ -240,7 +237,7 @@ if(!$isLoggedIn) {
 <!-- Footer -->
 
 <!-- Footer -->
-<footer class="page-footer py-3 bg-dark">
+<footer class="page-footer py-3 bg-dark fixed-bottom">
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; EGB 2019</p>
     </div>
@@ -253,6 +250,7 @@ if(!$isLoggedIn) {
 <script src="js/user-search.js"></script>
 <script src="js/pass.js"></script>
 <script src="js/confirm.js"></script>
+<script src="js/user-check.js"></script>
 
 </body>
 

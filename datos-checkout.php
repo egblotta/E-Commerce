@@ -13,7 +13,7 @@ $fila=mysqli_fetch_assoc($resultado);
 if($row>0) {
 
     $salida .= "<div class=\"mb-3\">
-                        <label for=\"nombre\">nombre</label>
+                        <label for=\"nombre\">Nombre</label>
                         <input name=\"nombre\" type=\"text\" class=\"form-control\" id=\"name\" value=" . $fila['nombre'] .">
                     </div>
                 
@@ -24,7 +24,7 @@ if($row>0) {
     echo $salida;
 }else{
     $salida .= "<div class=\"mb-3\">
-                        <label for=\"nombre\">nombre</label>
+                        <label for=\"nombre\">Nombre</label>
                         <input name=\"nombre\" type=\"text\" class=\"form-control\" id=\"name\" value=" . $_SESSION['ext-user'] .">
                     </div>
                 

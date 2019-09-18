@@ -45,7 +45,8 @@ require_once "ValidacionSesion.php";
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                             </div>
-                            <input name="usuario_nombre" class="form-control" placeholder="Usuario" type="text" required="">
+                            <input id="usuario_nombre" name="usuario_nombre" class="form-control" pattern="[A-Za-z]{4,}" title="Debe tener 4 letras o mas" placeholder="Usuario" type="text" required="">
+                            <div id="uname_response" class="response"></div>
                         </div>
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
@@ -102,7 +103,8 @@ require_once "ValidacionSesion.php";
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/pass.js"></script>
-<s
+<script src="js/user-check.js"></script>
+
 <!-- Bootstrap core JavaScript -->
 
 <script>window.jQuery || document.write('<script src="js/jquery.slim.js"><\/script>')</script>

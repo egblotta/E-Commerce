@@ -135,10 +135,17 @@ require_once "ValidacionSesion.php";
             <div class="list-group">
                 <a href="aerosoles.php" class="list-group-item">Aerosoles</a>
                 <a href="alfombras.php" class="list-group-item">Alfombras</a>
+                <a href="cepillos.php" class="list-group-item">Cepillos</a>
                 <a href="escobillones.php" class="list-group-item">Escobillones</a>
-                <a href="mopas.php" class="list-group-item">Moldes</a>
-                <a href="paños.php" class="list-group-item">Plasticos</a>
-                <a href="trapos.php" class="list-group-item">Trapos</a>
+                <a href="esponjas.php" class="list-group-item">Esponjas</a>
+                <a href="mopas.php" class="list-group-item">Mopas</a>
+                <a href="paños.php" class="list-group-item">Paños</a>
+                <a href="palas.php" class="list-group-item">Palas de residuos</a>
+                <a href="secadores.php" class="list-group-item">Secadores de piso</a>
+                <a href="trapos.php" class="list-group-item">Trapos de piso</a>
+                <a href="rejillas.php" class="list-group-item">Rejillas</a>
+                <a href="varios.php" class="list-group-item">Varios</a>
+
             </div>
 
         </div>
@@ -160,26 +167,6 @@ require_once "ValidacionSesion.php";
 
             </div>
             <!-- /.row -->
-
-            <br>
-            <h3 id="nosotros" class="card-header text-center font-weight-bold text-uppercase py-4">Quienes somos</h3>
-            <div class="card example-1 scrollbar-ripe-malinka">
-                <div class="card-body">
-                    <p>Somos una pequeña empresa dedicada a la venta y distribucion de articulos de limpieza en general. Trabajamos en Cuyo,
-                        ofreciendo nuestros productos en gran parte de Mendoza, San Luis y San Juan.
-                        Nuestras oficinas se encuentran ubicadas en 9 de Julio 1102 de ciudad de Mendoza.</p>
-                </div>
-            </div>
-
-            <br>
-            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Donde estamos ubicados</h3>
-            <!--Google map-->
-            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3350.2990543165847!2d-68.8429822!3d-
-                32.8902606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091a280b1023%3A0xbb274fe164cc7ba8!2s9+De+Julio+1102!
-                5e0!3m2!1ses-419!2sar!4v1561075825035!5m2!1ses-419!2sar" width="600" height="450" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
-            </div>
 
             <br>
 
@@ -288,7 +275,7 @@ require_once "ValidacionSesion.php";
 <!-- /.container -->
 
 <!-- Footer -->
-<footer class="py-3 bg-dark">
+<footer class="py-3 bg-dark fixed-bottom">
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; El Lagarto 2019</p>
     </div>

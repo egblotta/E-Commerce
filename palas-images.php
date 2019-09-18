@@ -3,7 +3,7 @@
 $db_handle= new DBController();
 
 $salida="";
-$query="select * from articulos WHERE categoria='Escobillones' ORDER BY codigo ";   //limitado al numero de ofertas
+$query="select * from articulos WHERE categoria='Palas' ORDER BY codigo ";   //limitado al numero de ofertas
 
 $resultado= mysqli_query($db_handle->connectDB(), $query);
 

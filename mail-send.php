@@ -9,14 +9,13 @@ $email = mysqli_real_escape_string($db_handle->connectDB(), $_POST['email']);
 $tel = mysqli_real_escape_string($db_handle->connectDB(), $_POST['telefono']);
 $dir1 = mysqli_real_escape_string($db_handle->connectDB(), $_POST['direccion']);
 $dir2 = mysqli_real_escape_string($db_handle->connectDB(), ($_POST['direccion2']));
-$pais = mysqli_real_escape_string($db_handle->connectDB(), isset($_POST['pais']));
-$prov = mysqli_real_escape_string($db_handle->connectDB(), isset($_POST['provincia']));
+$loc = mysqli_real_escape_string($db_handle->connectDB(), isset($_POST['localidad']));
 
 $cuerpo="<strong class='font-weight-bold'>Nombre: </strong> $name <br>";
 $cuerpo.="<strong class='font-weight-bold'>Telefono: </strong> $tel <br>";
 $cuerpo.="<strong class='font-weight-bold'>Direccion: </strong> $dir1 <br>";
 $cuerpo.="<strong class='font-weight-bold'>Direccion 2: </strong> $dir2 <br>";
-$cuerpo.="<strong class='font-weight-bold'>Provincia: </strong> $prov <br>";
+$cuerpo.="<strong class='font-weight-bold'>Localidad: </strong> $loc <br>";
 $cuerpo.="<br>";
 $cuerpo.="Lista de articulos";
 $cuerpo.="<hr>";

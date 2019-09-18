@@ -135,7 +135,8 @@ if(!$isLoggedIn) {
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
                         <i class="fas fa-sort-numeric-down prefix grey-text"></i>
-                        <input type="text" id="orangeForm-name" class="form-control validate text-uppercase" name="codigo" placeholder="Codigo" required>
+                        <input type="text" id="codigo" class="form-control validate text-uppercase" name="codigo" placeholder="Codigo" required>
+                        <div id="cod_response" class="response"></div>
                     </div>
                     <div class="md-form mb-5">
                         <i class="fas fa-font prefix grey-text"></i>
@@ -206,6 +207,7 @@ if(!$isLoggedIn) {
 <script src="js/articulos-search.js"></script>
 <script src="js/pass.js"></script>
 <script src="js/confirm.js"></script>
+<script src="js/arti-check.js"></script>
 
 </body>
 

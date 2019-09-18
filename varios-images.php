@@ -3,7 +3,7 @@
 $db_handle= new DBController();
 
 $salida="";
-$query="select * from articulos WHERE categoria='Escobillones' ORDER BY codigo ";   //limitado al numero de ofertas
+$query="select * from articulos WHERE categoria='Otros' ORDER BY precio ";   //limitado al numero de ofertas
 
 $resultado= mysqli_query($db_handle->connectDB(), $query);
 
@@ -31,8 +31,7 @@ if($row>0) {
         if ($isLoggedIn) {    //unicamente los admin pueden ver este boton
 
             $salida.="<div class=\"card-footer text-center\">                      
-                      <a id='" . $fila['codigo'] . "' class=\"btn btn-sm btn-success\" onclick='agregar(this.id)'>Agregar</a>                      
-                          
+                           <a id='" . $fila['codigo'] . "' class=\"btn btn-sm btn-success\" onclick='agregar(this.id)'>Agregar</a>                           
                         </div>";
         }
         $salida.="  </div>

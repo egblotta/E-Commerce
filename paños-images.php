@@ -3,7 +3,7 @@
 $db_handle= new DBController();
 
 $salida="";
-$query="select * from articulos WHERE categoria='Paños' ORDER BY precio ";   //limitado al numero de ofertas
+$query="select * from articulos WHERE categoria='Paños' ORDER BY codigo ";   //limitado al numero de ofertas
 
 $resultado= mysqli_query($db_handle->connectDB(), $query);
 
@@ -18,11 +18,14 @@ if($row>0) {
                     <div class=\"card h-100\">
                         <a><img class='card-img-top' src=".$fila['imagen']." alt='imagen'></a>
                         <div class='card-body align-top=100px;'>
+                         <h5 class='card-title'>
+                                <a class='text-black-50'>" . $fila['codigo'] . "</a>
+                            </h5>
                             <h4 class='card-title'>
                                 <a class='text-primary'>" . $fila['nombre'] . "</a>
                             </h4>
-                            <h5>".'$ ' . $fila['precio'] . "</h5>
-                            <p class='card-text'>*Los precios detallados no incluyen IVA</p>
+                            <!--- <h5>".'$ ' . $fila['precio'] . "</h5>
+                            <p class='card-text'>*Los precios detallados no incluyen IVA</p> --->
                         </div>";
 
         if ($isLoggedIn) {    //unicamente los admin pueden ver este boton

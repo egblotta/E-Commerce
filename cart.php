@@ -20,6 +20,7 @@ $aCarrito = unserialize($_COOKIE['carrito']);
 }
 
 $codigo = mysqli_real_escape_string($db_handle->connectDB(), $_GET['codigo']);  //paso solamente el codigo por get y lo busco en la bd
+$cantidad=mysqli_real_escape_string($db_handle->connectDB(), $_GET['cantidad']);
 
 $query=("SELECT * FROM articulos WHERE codigo = '$codigo'");
 $resultado = mysqli_query($db_handle->connectDB(), $query) or die (mysqli_error());
@@ -32,9 +33,10 @@ $iUltimaPos = count($aCarrito);
 $aCarrito[$iUltimaPos]['nombre'] = $fila['nombre'];
 $aCarrito[$iUltimaPos]['precio'] = $fila['precio'];
 $aCarrito[$iUltimaPos]['codigo'] = $fila['codigo'];
+$aCarrito[$iUltimaPos]['codigo'] = $cantidad;
 }
 
-//Creamos la cookie (serializamos)
+//Creamos la cookie y la serializamos
 
 $iTemCad = time() + (60 * 60);
 setcookie('carrito', serialize($aCarrito), $iTemCad);
